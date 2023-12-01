@@ -48,7 +48,7 @@ func (e *expression) Read() (err error) {
 	}
 
 	//разбираемся с системой счисления
-	if numsIsRoman == [2]bool{true, true} && numsIsRoman != [2]bool{false, false} {
+	if numsIsRoman == [2]bool{true, true} {
 		e.isRoman = true
 	} else if numsIsRoman != [2]bool{false, false} {
 		return errors.New("используются одновременно разные системы счисления")
